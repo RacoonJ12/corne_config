@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     combos { compatible = "zmk,combos"; };
@@ -15,9 +16,9 @@
 
         layer_0 {
             bindings = <
-&bt BT_CLR_ALL  &sys_reset  &sys_reset  &sys_reset  &sys_reset  &sys_reset    &none  &none       &none       &none       &none       &none
-&sys_reset      &sys_reset  &sys_reset  &sys_reset  &sys_reset  &sys_reset    &none  &sys_reset  &sys_reset  &sys_reset  &none       &none
-&sys_reset      &sys_reset  &sys_reset  &sys_reset  &sys_reset  &sys_reset    &none  &sys_reset  &sys_reset  &sys_reset  &sys_reset  &sys_reset
+&bt BT_CLR_ALL  &sys_reset  &sys_reset  &kp W       &sys_reset  &sys_reset    &none  &none       &none       &kp C       &none       &none
+&sys_reset      &sys_reset  &kp A       &sys_reset  &sys_reset  &sys_reset    &none  &sys_reset  &kp B       &sys_reset  &none       &none
+&sys_reset      &sys_reset  &sys_reset  &sys_reset  &kp S       &sys_reset    &none  &sys_reset  &sys_reset  &sys_reset  &sys_reset  &sys_reset
                                         &sys_reset  &sys_reset  &sys_reset    &none  &none       &none
             >;
         };
